@@ -15,5 +15,29 @@
             <ColumnDefinition Width="1*" />
             <ColumnDefinition Width="140" />
         </Grid.ColumnDefinitions>
+        
+        <!--Nav pane-->
+        <Rectangle Fill="{StaticResource AccentDark }" />
+        
+        <!--Task List Background-->
+        <Rectangle Fill="{StaticResource TaskListBackground}"
+                   Grid.Column="1"/>
+
+        <!--Task List Grid-->
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="1" />
+            </Grid.RowDefinitions>
+            
+            <!--Task Label-->
+            <Label Content="Tasks"
+                   />
+        </Grid>
+        
+        <!--Task Status Bar-->
+        <Rectangle Fill="{StaticResource TaskStatusBackground}" 
+                   Grid.Column="3"/>
     </Grid>
 </Window>
