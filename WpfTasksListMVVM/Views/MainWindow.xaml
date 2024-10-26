@@ -27,13 +27,61 @@
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="60" />
-                <RowDefinition Height="60" />
+                <RowDefinition Height="38" />
                 <RowDefinition Height="1" />
             </Grid.RowDefinitions>
             
             <!--Task Label-->
-            <Label Content="Tasks"
-                   />
+            <Label Style="{StaticResource Heading1}" 
+                   Content="Tasks"
+                   VerticalAlignment="Center"
+                   Padding="20 0 0 0"
+                   IsHitTestVisible="False" />
+            
+            <!--Add new Task button-->
+            <Button Style="{StaticResource RoundAccentButton}"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    Height="40"
+                    Width="40"
+                    Margin="0 0 20 0">
+                <!--Icon-->
+                <Viewbox Width="25"
+                         Height="25" >
+                    <Path Data="{StaticResource NewTaskIcon}" Fill="{StaticResource OnAccent}" Height="27" Stretch="Fill" Width="28"/>
+                </Viewbox>
+            </Button> 
+            
+            <!--Search Task Bar-->
+            <TextBox x:Name="TaskSearchBox"  
+                     Style="{StaticResource TaskListSearchBox}"
+                     Grid.Row="1" 
+                     Margin="20 0"/>
+
+            <Label IsHitTestVisible="False"
+                   Content="Search Tasks..."
+                   Grid.Row="1"
+                   VerticalAlignment="Center"
+                   Margin="38 0 0 0"
+                   Foreground="{StaticResource Borders}"
+                   Visibility="{Binding Text.IsEmpty, ElementName=TaskSearchBox, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+
+            <Button Style="{StaticResource SearchButton}"
+                    Grid.Row="1"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    Margin="0 0 30 0"
+                    Padding="10"
+                    Height="30"
+                    Width="30"
+                    Background="White"
+                    BorderBrush="Transparent" Cursor="Hand"
+                    >
+                <Viewbox Width="16" Height="16">
+                    <Path Data="{StaticResource SearchIcon}" Fill="{StaticResource Borders}"/>
+                </Viewbox>
+            </Button>
+            
         </Grid>
         
         <!--Task Status Bar-->

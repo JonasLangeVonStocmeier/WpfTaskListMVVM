@@ -2,11 +2,16 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <!--App Colours-->
     <SolidColorBrush x:Key="AccentDark" Color="#FF164863" />
+    <SolidColorBrush x:Key="AccentDarkOver" Color="#FF396A84" />
+    <SolidColorBrush x:Key="AccentDarkClick" Color="#FF66A3C5" />
+    
     <SolidColorBrush x:Key="TaskListBackground" Color="#FFECECEC" />
     <SolidColorBrush x:Key="WindowBackground" Color="#FFFFFFFF" />
     <SolidColorBrush x:Key="TaskStatusBackground" Color="#FFF6F6F6" />
     <SolidColorBrush x:Key="DefaultText" Color="#FF474747" />
-    
+    <SolidColorBrush x:Key="OnAccent" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="Borders" Color="#FFCCCCCC" />
+
     <!--Task Importance Colours-->
     <SolidColorBrush x:Key="Importance-Low" Color="#FF0CAFF4" />
     <SolidColorBrush x:Key="Importance-Med" Color="#FF2AD985" />
