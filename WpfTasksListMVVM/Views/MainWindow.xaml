@@ -28,7 +28,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="60" />
                 <RowDefinition Height="38" />
-                <RowDefinition Height="1" />
+                <RowDefinition Height="1*" />
             </Grid.RowDefinitions>
             
             <!--Task Label-->
@@ -82,6 +82,103 @@
                 </Viewbox>
             </Button>
             
+            <!--List View For Task Items-->
+            <ListView Grid.Row="2"
+                      Background="Transparent"
+                      Margin="0 20"
+                      BorderBrush="Transparent">
+
+            </ListView>
+        </Grid>
+        
+        <!--Task Viewer -->
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="230" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="60" />
+            </Grid.RowDefinitions>
+            
+            <!--Task Details-->
+            <Grid Margin="20 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="30" />
+                </Grid.RowDefinitions>
+                
+                <!--Task Title-->
+                <TextBlock Text="Title"
+                           Style="{StaticResource Title}"
+                           VerticalAlignment="Center" />
+                <!--Importance Badge-->
+                <Border HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Padding="20 5"
+                        CornerRadius="5"
+                        Background="{StaticResource Importance-Low}">
+                    <TextBlock Text="Critical"
+                               Foreground="Black"
+                               FontSize="16"
+                               FontWeight="Normal">
+
+                    </TextBlock>
+                </Border>
+                
+                <!--Description Scroll Viewer-->
+                <ScrollViewer Grid.Row="1"
+                              VerticalScrollBarVisibility="Auto"
+                              HorizontalScrollBarVisibility="Disabled">
+                    <!--Description-->
+                    <TextBlock Text="This is a short test desruption" 
+                           FontSize="16"
+                           Foreground="{StaticResource PlaceholderText}"
+                           Margin="0 20"/>
+                </ScrollViewer>
+                
+                <!--Due Date-->
+                <TextBox Text="Due: 18/12/2024"
+                         Background="{StaticResource AccentDark}"
+                         Padding="20 3" 
+                         VerticalAlignment="Center"
+                         HorizontalAlignment="Left"
+                         Grid.Row="2"
+                         Foreground="White"/>
+            </Grid>
+
+
+            <Grid Grid.Row="1"
+                  Margin="0 20 0 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="1*"/>
+
+                </Grid.RowDefinitions>
+                
+                <!--List Title-->
+                <TextBlock Style="{StaticResource Title}"
+                           Text="Task Check List" 
+                           VerticalAlignment="Center"
+                           Margin="20 0 0 0"/>
+
+
+                <!--Check List-->
+                <ListView Background="Transparent"
+                          BorderThickness="0"
+                          Grid.Row="1">
+
+                </ListView>
+            </Grid>
+
+            <!--Task View Buttons-->
+            <Grid Grid.Row="2">
+                <Button HorizontalAlignment="Left"
+                        VerticalAlignment="Center"/>
+                <Button HorizontalAlignment="Center"
+                        VerticalAlignment="Center"/>
+                <Button HorizontalAlignment="Right"
+                        VerticalAlignment="Center"/>
+            </Grid>
         </Grid>
         
         <!--Task Status Bar-->

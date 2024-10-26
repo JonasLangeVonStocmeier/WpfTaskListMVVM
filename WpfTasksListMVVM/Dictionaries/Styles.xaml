@@ -82,4 +82,21 @@
             </Setter.Value>
         </Setter>
     </Style>
+    
+    <!--Task Title-->
+    <Style x:Key="Title" TargetType="TextBlock">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Foreground" Value="{StaticResource DefaultText}" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="FontWeight" Value="Bold" />
+
+    </Style>
+    
+    <!--Complete Button-->
+    <Style x:Key="TaskViewCompleteButton" TargetType="Button">
+        <Setter Property="Background" Value="{StaticResource Progress-Completed}" />  
+    </Style>
+    <!--Edit Button-->
+    <!--Delete Button-->
+    
 </ResourceDictionary>

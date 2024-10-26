@@ -11,7 +11,7 @@
     <SolidColorBrush x:Key="DefaultText" Color="#FF474747" />
     <SolidColorBrush x:Key="OnAccent" Color="#FFFFFFFF" />
     <SolidColorBrush x:Key="Borders" Color="#FFCCCCCC" />
-
+    <SolidColorBrush x:Key="PlaceholderText" Color="#FF5D5D5D" />
     <!--Task Importance Colours-->
     <SolidColorBrush x:Key="Importance-Low" Color="#FF0CAFF4" />
     <SolidColorBrush x:Key="Importance-Med" Color="#FF2AD985" />
