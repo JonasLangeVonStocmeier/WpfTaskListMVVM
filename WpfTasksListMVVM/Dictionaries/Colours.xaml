@@ -11,7 +11,10 @@
     <SolidColorBrush x:Key="DefaultText" Color="#FF474747" />
     <SolidColorBrush x:Key="OnAccent" Color="#FFFFFFFF" />
     <SolidColorBrush x:Key="Borders" Color="#FFCCCCCC" />
+    
     <SolidColorBrush x:Key="PlaceholderText" Color="#FF5D5D5D" />
+    <SolidColorBrush x:Key="PlaceholderBorder" Color="#FF949494" />
+    <SolidColorBrush x:Key="PlaceholderBorderText" Color="#FF373737" />
 
     <SolidColorBrush x:Key="Button.Complete" Color="#FF57B186" />
     <SolidColorBrush x:Key="Button.Complete.Over" Color="#FF4B886B" />
@@ -29,7 +32,15 @@
     <SolidColorBrush x:Key="Nav.Over" Color="#FF396A84" />
     <SolidColorBrush x:Key="Nav.Click" Color="#FF87B7D0" />
 
+    <SolidColorBrush x:Key="TaskListText" Color="#FF838383" />
+    <SolidColorBrush x:Key="TaskListTitle" Color="#FF707070" />
 
+    <SolidColorBrush x:Key="NewTaskChecklistButton" Color="#FF848484" />
+    <SolidColorBrush x:Key="NewTaskChecklistButton.Over" Color="#FF676767" />
+    <SolidColorBrush x:Key="NewTaskChecklistButton.Click" Color="#FFBDBDBD" />
+
+    <!--New Task Window-->
+    <SolidColorBrush x:Key="NewTaskWindowBackground" Color="#FFFFFFFF" />
 
     <!--Task Importance Colours-->
     <SolidColorBrush x:Key="Importance-Low" Color="#FF0CAFF4" />

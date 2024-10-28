@@ -4,10 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfTasksListMVVM"
+        xmlns:vm="clr-namespace:WpfTasksListMVVM.ViewModels"
         mc:Ignorable="d"
         Title="MainWindow" Height="832" Width="1280"
         MinWidth="1150" MinHeight="450"
         WindowStartupLocation="CenterScreen" Cursor="">
+    <Window.DataContext>
+        <vm:MainWindowViewModel/>
+    </Window.DataContext>
     <Window.Resources>
         <Storyboard x:Key="SlideOnLoad">
             <DoubleAnimation Storyboard.TargetProperty="Opacity"
@@ -25,7 +29,7 @@
         </Storyboard>
     </Window.Resources>
     
-    <Grid Opacity="0" Margin="0 100 0 0">
+    <Grid Opacity="1" Margin="0">
         <Grid.Triggers>
             <EventTrigger RoutedEvent="FrameworkElement.Loaded">
                 <BeginStoryboard Storyboard="{StaticResource SlideOnLoad}" />
@@ -85,7 +89,8 @@
                     VerticalAlignment="Center"
                     Height="40"
                     Width="40"
-                    Margin="0 0 20 0">
+                    Margin="0 0 20 0"
+                    Command="{Binding IOpenNewWindow}">
                 <!--Icon-->
                 <Viewbox Width="25"
                          Height="25" >
