@@ -25,6 +25,12 @@
     <SolidColorBrush x:Key="Button.Delete.Over" Color="#FF863636" />
     <SolidColorBrush x:Key="Button.Delete.Click" Color="#FFC18889" />
 
+    <SolidColorBrush x:Key="Nav.Default" Color="Transparent" />
+    <SolidColorBrush x:Key="Nav.Over" Color="#FF396A84" />
+    <SolidColorBrush x:Key="Nav.Click" Color="#FF87B7D0" />
+
+
+
     <!--Task Importance Colours-->
     <SolidColorBrush x:Key="Importance-Low" Color="#FF0CAFF4" />
     <SolidColorBrush x:Key="Importance-Med" Color="#FF2AD985" />
