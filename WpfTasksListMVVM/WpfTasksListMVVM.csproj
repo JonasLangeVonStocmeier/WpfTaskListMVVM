@@ -12,8 +12,11 @@
     <Folder Include="Assets\Files\Data\" />
     <Folder Include="Assets\Files\Txt\" />
     <Folder Include="Assets\Images\" />
-    <Folder Include="DataServices\" />
     <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
 </Project>
